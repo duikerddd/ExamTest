@@ -171,3 +171,26 @@ int main()
 	getchar();
 	return 0;
 }
+
+void Fun(int& x){ cout << "lvalue ref" << endl; }
+void Fun(int&& x){ cout << "rvalue ref" << endl; }
+void Fun(const int& x){ cout << "const lvalue ref" << endl; }
+void Fun(const int&& x){ cout << "const rvalue ref" << endl; }
+
+template<typename T>
+void PerfectForword(T&& t){ Fun(forward<T>(t)); }
+
+int main()
+{
+	PerfectForword(10);  //rvalue ref
+
+	int a = 2;
+	PerfectForword(a);     //lvalue ref
+	PerfectForword(move(a));   //rvalue ref
+
+	const int b = 2;
+	PerfectForword(b);   //const lvalue ref
+	PerfectForword(move(b)); //const rvalue ref
+
+	return 0;
+}
