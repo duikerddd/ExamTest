@@ -4,7 +4,6 @@
 using namespace std;
 
 
-
 /*
 // 如果没有带参数,推导函数的类型
 cout << typeid(decltype(GetMemory)).name() << endl;
