@@ -1,7 +1,15 @@
+class Point{
+ public:
+    //显示生成默认函数
+    Point()=defalut;
+    Point& operator=(const Point& p);
+ private:
+    int _x;
+    int _y;
+};
 
-
-//类内声明,类外定义显示缺省赋值运算符重载
-Point& Point::operator=(const Point& p) = default;
+//显示删除默认函数
+Point& Point::operator=(const Point& p) = delete;
 
 
 int main()
