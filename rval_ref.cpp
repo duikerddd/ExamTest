@@ -53,7 +53,7 @@
 //	return 0;
 //}
 
-/*
+//完美转发: 让参数安按照原来的类型转发到另一个函数,因为参数默认情况下都会转换成左值引用类型.
 void Fun(int& x){ cout << "lvalue ref" << endl; }
 void Fun(int&& x){ cout << "rvalue ref" << endl; }
 void Fun(const int& x){ cout << "const lvalue ref" << endl; }
@@ -76,4 +76,3 @@ int main()
 
 	return 0;
 }
-*/
