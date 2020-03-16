@@ -48,3 +48,52 @@ int main(){
 	
 	return 0;
 }
+
+/*
+void(*PF)();
+int main(){
+	auto f1 = []{cout << "hello world" << endl; }; 
+	auto f2 = []{cout << "hello world" << endl; };
+	
+	//f1 = f2; 
+	// 编译失败--->提示找不到operator=(),因为lambda表达式底层上就是一个重载()的匿名类
+	// 允许使用一个lambda表达式拷贝构造一个新的副本
+	auto f3(f2);
+	f3();
+
+	// 可以将lambda表达式赋值给相同类型的函数指针
+	PF=f2;
+	PF();
+	
+	return 0;
+}
+
+
+
+class Rate{
+public:
+	Rate(double rate) : _rate(rate){}
+
+	double operator()(double money, int year)
+	{
+		return money* _rate * year;
+	}
+
+private:
+	double _rate;
+};
+
+int main()
+{
+	// 函数对象
+	double rate=0.49;
+	Rate r1(rate);
+	r1(10000, 2);
+
+	// 仿函数
+	auto r2= [=](double monty, int year)->double{return monty*rate*year; };
+	r2(10000, 2);
+
+	return 0;
+}
+*/
