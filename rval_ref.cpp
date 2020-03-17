@@ -17,7 +17,8 @@
 //
 //	return 0;
 //}
-//
+
+
 //class Point{
 //public:
 //	Point(int x, int y) :_x(x), _y(y){}
@@ -38,7 +39,8 @@
 //	int _x = 2;
 //	int _y = 3;
 //};
-//
+
+
 //Point GetTempPoint()
 //{
 //	Point p(1, 1);
