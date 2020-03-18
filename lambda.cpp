@@ -2,14 +2,14 @@
 //	string _name;
 //	int _val;
 //};
-//
+
 //struct Compare{
 //	bool operator()(const Good& g1,const Good& g2)
 //	{
 //		return g1._val <= g2._val;
 //	}
 //};
-//
+
 //int main()
 //{
 //	Good gs[] = {{ "苹果", 2 }, { "香蕉", 3 }, { "西瓜", 1 }};
