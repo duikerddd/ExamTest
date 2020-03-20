@@ -19,6 +19,7 @@ Point p2(2, 2);
 p1.Print();
 p2.Print();
 
+ 
 getchar();
 return 0;
 }
