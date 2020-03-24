@@ -8,6 +8,7 @@ using namespace std;
 // 如果没有带参数,推导函数的类型
 cout << typeid(decltype(GetMemory)).name() << endl;
 
+
 // 如果带参数列表,推导的是函数返回值的类型
 // ps: 只是推演,不会调用函数
 cout << typeid(decltype(GetMemory(2))).name() << endl;
