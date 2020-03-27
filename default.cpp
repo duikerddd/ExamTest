@@ -1,3 +1,4 @@
+
 class Point{
  public:
     //显示生成默认函数
@@ -7,6 +8,7 @@ class Point{
     int _x;
     int _y;
 };
+
 
 //显示删除默认函数
 Point& Point::operator=(const Point& p) = delete;
