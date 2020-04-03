@@ -40,6 +40,7 @@ vals[n++] = v;
 }
 };
 
+
 //2.推演函数返回值类型
 void *GetMemory(size_t size)
 {
