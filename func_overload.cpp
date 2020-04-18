@@ -11,6 +11,7 @@ long Add(long left, long right)
 return left+right;
 }
 
+
 int main()
 {
     Add(10, 20);       //在程序编译期间对函数的参数进行类型推演
