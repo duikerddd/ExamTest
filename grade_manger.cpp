@@ -4,6 +4,7 @@
 #include<stdlib.h>
 #include<string.h>
 
+
 //学生信息结构体
 typedef struct Student{   
 	int no;               //学号
@@ -111,6 +112,7 @@ int check(int no)
 	
 	return 0;
 }
+
 
 void save(stu *p)
 {
