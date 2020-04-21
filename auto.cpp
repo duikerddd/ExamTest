@@ -2,6 +2,7 @@
 auto i=0,*p=&i; //√,i是整数、p是整型指针
 auto sz=0,pi=3.14; //x,sz和pi类型不一致
 
+
 //2.与const结合
 const int i=2;
 auto j=i;        //int auto会过滤const
