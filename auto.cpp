@@ -9,5 +9,6 @@ auto j=i;        //int auto会过滤const
 auto& j=i;       //const int & 厉害
 const auto j=i;  //const int   因为过滤了
 
+
 //3.与指针结合---可推算
 //4.与引用结合---可推算出引用原有类型
