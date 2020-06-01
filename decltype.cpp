@@ -14,6 +14,7 @@ cout << typeid(decltype(GetMemory(2))).name() << endl;
 
 
 
+
 //1.推演表达式类型作为变量的定义类型
 int a = 10;
 int b = 20;
