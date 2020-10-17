@@ -36,12 +36,22 @@ public:
 	//赋值
 	SharedPtr<T>& operator=(const SharedPtr<T>& tmp)
 	{
-		_ptr = tmp._ptr;
-		_cnt = tmp._cnt;
-		_mtx = tmp._mtx;
+		//不给自己赋值
+		if (_ptr != tmp._ptr)
+		{
+			// 释放管理的旧资源
+			Release();
+			// 共享管理新对象的资源，并增加引用计数
+			_ptr = tmp._ptr;
+			_cnt = tmp._cnt;
+			_mtx = tmp._mtx;
+			if (_ptr){
+				AddRefCount();
+			}
 
-		if (_ptr)
-			AddRefCount();
+			//返回引用
+			return *this;
+		}
 	}
 
 	T& operator*()
